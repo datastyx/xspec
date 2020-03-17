@@ -3,7 +3,7 @@ FROM openjdk:8-jre-alpine
 ARG saxon_ver=9.9.1-5
 
 RUN wget \
-  http://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/${saxon_ver}/Saxon-HE-${saxon_ver}.jar \
+  https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/${saxon_ver}/Saxon-HE-${saxon_ver}.jar \
 -O /usr/local/share/saxon.jar
 
 WORKDIR /usr/local/share/xspec
